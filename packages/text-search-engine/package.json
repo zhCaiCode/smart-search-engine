@@ -1,6 +1,6 @@
 {
 	"name": "text-search-engine",
-	"version": "1.5.0",
+	"version": "1.5.2",
 	"description": "A dynamic programming-based text search engine that supports mixed Chinese and English fuzzy search, returning the highest-weight matching results.",
 	"license": "MIT",
 	"author": "cjinhuo",
@@ -9,8 +9,12 @@
 	"types": "src/index.ts",
 	"typesVersions": {
 		"*": {
-			".": ["dist/index.d.ts"],
-			"react": ["dist/react/index.d.ts"]
+			".": [
+				"dist/index.d.ts"
+			],
+			"react": [
+				"dist/react/index.d.ts"
+			]
 		}
 	},
 	"exports": {
@@ -43,7 +47,11 @@
 		"fuzzy search",
 		"SDK"
 	],
-	"files": ["dist", "README.md", "CHANGELOG.md"],
+	"files": [
+		"dist",
+		"README.md",
+		"CHANGELOG.md"
+	],
 	"scripts": {
 		"esm": "tsc -b ./tsconfig.json",
 		"rollup": "batch-rollup -d ./rollups",
